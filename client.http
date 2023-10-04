@@ -30,7 +30,7 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "Nova pergunta 4",
+  "title": "Nova pergunta 4 12",
   "content": "Contéudo da pergunta"
 }
 
@@ -41,5 +41,16 @@ Get {{baseUrl}}/questions?page=1
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
+###
 
+# @name create_answer
+Post {{baseUrl}}/answers
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "authorId": "0375f155-cd8a-4cef-9b93-620c05d1bddf",
+  "questionId":"f2447e91-eca2-4111-af33-b23ff4c3693d",
+  "content": "Answer"
+}
 
